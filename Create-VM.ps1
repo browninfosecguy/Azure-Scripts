@@ -23,6 +23,8 @@ function Create-VM {
 
     New-AzResourceGroup -Name $RSGName -Location $Location
 
+    New-AzVM -ResourceGroupName $RSGName -Name "Ubuntu-server" -VirtualNetworkName "Test-Network" -SubnetName "Test-Subnet" -Image ""
+
     
 }
 #Create-VM "test-sunny" "canadaeast"
